@@ -8,16 +8,40 @@ body, h1, h2, h3, p, ul {
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f5f5f5;
+    background: linear-gradient(to right, #d5d4cf, #e9e0b4, #bbeba8, #ff8d7e); 
     color: #333;
   }
   
-  header {
-    background-color: #333;
+  /* ... (Previous CSS styles) */
+
+header {
+    
     color: #fff;
     padding: 20px;
     text-align: center;
+    position: relative;
   }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://thumbs.dreamstime.com/b/futuristic-vibrant-sports-car-brightly-painted-neon-graffiti-created-generative-ai-270793396.jpg'); /* Replace with your graffiti-style image */
+    background-size: cover;
+    opacity: 0.6; /* Adjust the opacity as needed */
+    z-index: -1;
+  }
+  
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
   
   nav ul {
     list-style: none;
